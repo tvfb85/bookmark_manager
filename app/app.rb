@@ -1,8 +1,11 @@
-require 'sinatra'
+require 'sinatra/base'
+require_relative 'models/link'
 
-class Link < Sinatra::Base
+class BookmarkManager < Sinatra::Base
+
     get '/links' do
-      'Hello World!'
+      @links = Link.all
+      erb :'links/index'
     end
 
     # start the server if ruby file executed directly

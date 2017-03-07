@@ -5,13 +5,13 @@
 feature 'see lists of bookmarks' do
   scenario 'on the page of links' do
 
-    Link.create(:url => 'http://www.example.com', :title => 'Example Website' )
+    Link.create(url: 'http://www.makersacademy.com', title: 'Makers Academy' )
     visit '/links'
 
     expect(page.status_code).to eq 200
 
     within 'ul#links' do
-      expect(page).to have_content 'Example Domain'
+      expect(page).to have_content 'Makers Academy'
     end
   end
 end
