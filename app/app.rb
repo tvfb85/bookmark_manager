@@ -1,7 +1,7 @@
 require 'sinatra'
 
 class Link < Sinatra::Base
-    get '/' do
+    get '/links' do
       'Hello World!'
     end
 
