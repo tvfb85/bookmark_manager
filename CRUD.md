@@ -1,8 +1,10 @@
 ```
- ___  ___          ___
-|     |__|  |   | |   \
-|     |\    |   | |    |
-|___  | \   |___| |__ /
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+ _ _     _ _     _   _    _ _
+|       | _ |    |   |   |    \
+|       |  \     |   |   |     |
+|_ _  * |   \  * |___| * |_ _ /   *
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 ```
 
@@ -16,31 +18,40 @@ The commands corresponding to the CRUD in SQL are **INSERT, SELECT, UPDATE** and
 
 How to create a new post in the database:
 
-``` post = Post.create(:title => ‘CRUD’, :description => ‘Create, Read, Update, Delete’) ```
+```
+post = Post.create(:title => ‘CRUD’, :description => ‘Create, Read, Update, Delete’)
+```
 
 
 **READ** — Equivalent to SQL’s *SELECT* statement
 
 How to get a post in the database:
 
-``` post = Post.get(:title => ‘CRUD’) ```
+```
+post = Post.get(:title => ‘CRUD’)
+```
 
 
 **UPDATE** — Equivalent to SQL’s *UPDATE* statement
 
 How to update a post in the database:
 
-``` post.description = ’Some new description can be assigned here’ ``` 
+``` post.description = ’Some new description can be assigned here’ ```
 
 Must remember to save your changes to the database using:    
-``` post.save ```
+
+```
+post.save
+```
 
 
 **DELETE** — Equivalent to SQL’s *DELETE* statement
 
 How to delete to post in the database:
 
-``` post.destroy ```
+```
+post.destroy
+```
 
 In addition to these, SQL allows:
 
@@ -49,4 +60,3 @@ In addition to these, SQL allows:
 -Creation of stored procedures in a database.  
 -Creation of views in a database.  
 -Can set permissions on tables, procedures and views.  
-
