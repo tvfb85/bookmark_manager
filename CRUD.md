@@ -15,3 +15,31 @@ In addition to this SQL allows:
 *Creation of stored procedures in a database.
 *Creation of views in a database.
 *Can set permissions on tables, procedures and views.
+
+
+**CREATE** — Equivalent to SQL’s *INSERT** statement
+
+How to create a new post in the database:
+
+``` post = Post.create(:title => ‘CRUD’, :description => “Create, Read, Update, Delete’) ```
+
+
+**READ** — Equivalent to SQL’s *SELECT* statement
+
+How to read a post in the database:
+
+``` post = Post.get(:title => ‘CRUD’) ```
+
+
+**UPDATE** — Equivalent to SQL’s *UPDATE* statement
+
+How to update a post in the database:
+
+``` post.description = ’Some new description can be assigned here’ ```
+
+
+**DELETE** — Equivalent to SQL’s *DELETE* statement
+
+How to delete to post in the database:
+
+``` post.destroy ```
